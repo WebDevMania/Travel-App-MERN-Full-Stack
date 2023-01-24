@@ -1,0 +1,181 @@
+.container {
+  height: 100%;
+  width: 100%;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+
+.wrapper {
+  height: 100%;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  gap: 150px;
+  align-items: flex-start;
+}
+
+.left {
+  flex: 1;
+}
+
+.right {
+  flex: 1;
+}
+
+.imgWrapper {
+  height: 700px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.imgWrapper > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.right {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.right > h2 {
+  font-size: 36px;
+  font-weight: bold;
+  color: rgb(201, 136, 15);
+  margin-bottom: 40px;
+}
+
+.type{
+  margin-bottom: 2rem;
+  font-size: 20px;
+  color: #333;
+  font-weight: 500;
+}
+
+.type > span{
+  font-weight: normal;
+  text-transform: capitalize;
+  margin-left: 0.5rem;
+}
+
+.review {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 20px;
+}
+
+.icon {
+  color: rgb(201, 136, 15);
+  font-size: 17px;
+}
+
+.priceAndCountry{
+    margin: 0.75rem 0;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 20px;
+}
+
+.price {
+  margin: 2rem 0;
+  font-size: 20px;
+  font-weight: 500;
+  color: rgb(201, 136, 15);
+}
+
+.desc{
+    margin: 2.5rem 0;
+    color: #222;
+    font-size: 22px;
+    line-height: 34px;
+}
+
+.desc > span{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.typeDetailForm {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  gap: 22px;
+}
+
+.typeDetailForm > h3 {
+  color: #222;
+  font-size: 24px;
+  margin-bottom: 1rem;
+}
+
+.typeDetailForm input {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #777;
+  padding: 0.25rem 0.5rem;
+  transition: 150ms all;
+}
+
+.typeDetailForm input::placeholder {
+  padding-left: 0.5rem;
+}
+
+.typeDetailForm > button {
+  margin-top: 2rem;
+  padding: 0.5rem 1.25rem;
+  outline: none;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 500;
+  border: 1px solid transparent;
+  background-color: rgb(201, 136, 15);
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.typeDetailForm > button:hover {
+  border: 1px solid rgb(201, 136, 15);
+  color: rgb(201, 136, 15);
+  background-color: #fff;
+}
+
+.errorMessage {
+  height: 125px;
+  width: 300px;
+  text-align: center;
+  border-radius: 20px;
+  line-height: 1.5rem;
+  padding: 3rem 5rem;
+  background-color: rgb(171, 122, 31);
+  color: #fff;
+  position: fixed;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 5rem;
+  right: 5rem;
+}
+
+.successMessage{
+  height: 125px;
+  width: 300px;
+  text-align: center;
+  border-radius: 20px;
+  line-height: 1.5rem;
+  padding: 3rem 5rem;
+  background-color: green;
+  color: #fff;
+  position: fixed;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 5rem;
+  right: 5rem;
+}
